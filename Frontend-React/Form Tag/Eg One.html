@@ -1,0 +1,89 @@
+<p>
+    Form Tag is used to pass the data into data base <br>
+Form Tag has two interlinked tags which is label and input in this tag <br>
+In Label tag, the following are the attributes present - 
+In Input tag , the following are the attributes present - 
+Name attribute is used to send the data to Server level <br>
+For attribute and Id attribute are integrated together if not integrated they will not be working in the project <br>
+Type attribute is used to identify the type <br>
+In form tag the attributes present are action and menthod. Action is used for backend and method attribute which default will be in get method to send the date which is visible in the url space to avoid we ue post method which will make the data invisible in the url while sending the data to server. <br>    
+fieldset tag is used to put the entire form in a box. <br>
+Legend tag is also used along with the fielset tag which are combined tag both tags have to be used combined in form tag compulsoryly. <br>
+In Input tag "DATE" Attribute is used in the form tag for Date of Birth. <br>
+In Input tag "time" attribute is used to specify the time. <br>
+To reflect month and year in the form atag "month" attribute is used in the input tag. <br>
+To reflect week in the form atag "Week" attribute is used in the input tag. <br>
+In Input tag "datetime-local" attribute is used to mention ethe date and time in the form tag. <br>
+To insert the number {<input type="number" min="0" max="50">} or the drag bar range - {<input type="range" min="5" max="35"> } these are the attributes that are used in the form tag. <br>
+To insert the comment box in the form box textarea attribite - {<textarea name="" id="" cols="30" rows="10"></textarea>} is used in the form tag 
+auto complete attribute is used in the form tag for auto suggesting the data which was entered before in the form we can customize it by on/off in the attribute. <br>
+</p>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Tag</title>
+</head>
+<body>
+
+<fieldset>
+<legend>
+    Fill the form 
+</legend>
+
+<form action="" method="post">
+
+    <h4>Personal Details</H4>
+
+    <label for="fname">First Name : </label>
+<input type="text" name="" id="fname" required placeholder="First Name"> <br><br>
+
+<label for="lname">Last Name : </label>
+<input type="text" name="" id="lname" required placeholder="Last Name"> <br><br>
+
+<label for="">Email I'd : </label>
+<input type="email" name="" id="email" required placeholder="Email"> <br><br>
+
+<label for="Num">Contact : </label>
+<input type="num" name="" id="Num" required placeholder="Number"> <br><br>
+
+<Label>Gender :</Label>
+<label for="male">Male</label>
+<input type="radio" name="Gender" id="male">
+<label for="female">Female</label>
+<input type="Radio" name="Gender" id="female"> <br><br>
+
+<Label for="DOB">DOB :</Label>
+<input type="Date" name="DOB" id="DOB"> <br><br>
+
+<label for="">Skills :</label>
+<label for="Java">Java</label>
+<input type="checkbox" name="Java" id="Java"> 
+<LABEl for="Python">Python</LABEl>
+<input type="checkbox" name="Python" id="Python">
+<label for="Javascript">Javascript</label>
+<input type="checkbox" name="Javascript" id="Javacsript"> 
+<label for="React">React</label>
+<input type="checkbox" name="React" id="React">
+<label for="PHP">PHP</label>
+<input type="checkbox"name="PHP"id="PHP">
+<label for=".Net">.Net</label> 
+<input type="checkbox" name=".Net" id=".Net"> <br><br>
+
+<label for="Attach Resume">Attach Resume :</label>
+<input type="file" name="Attach Resume" id="Attach Resume"> <br><br>
+
+<Label for="Address"></Label>Address</Label>
+<input type="text" name="Address" id="Address"> <br><br>
+
+<input type="submit" name="" id="">
+
+</form>
+
+</fieldset>
+
+
+
+</body>
+</html>
